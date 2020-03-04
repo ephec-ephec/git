@@ -1,0 +1,19 @@
+[alias]
+
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  df = diff
+
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+  # lola = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+  fa = fetch --all
+  ds = diff --staged
+
+[user]
+	email = xavier.dubruille@amoobi.com
+	name = xavier dubruille
+
