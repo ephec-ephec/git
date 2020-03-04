@@ -1,3 +1,4 @@
+---
 title: Workshop Git
 subtitle: Développement web avancé
 author: 
@@ -32,3 +33,52 @@ Cloner le repository :
 Ce document est à compiler avec le template eisvogel pour pandoc.
 Il est possible de le faire via cette commande (à condition que vous ayez déjà installé pandoc et ses dependencies tout comme récupéré le template eisvogel) : `pandoc --from=markdown --latex-engine=xelatex --output mcc_vimFile.pdf mcc_vimFile.md --template eisvogel.tex -N`
 
+# .gitconfig
+
+```conf
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  df = diff
+
+  lol = log --graph --decorate --pretty=oneline --abbrev-commit
+  lola = log --graph --decorate --pretty=oneline --abbrev-commit --all --date=local
+  # lola = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ad) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+
+  fa = fetch --all
+  ds = diff --staged
+
+  lg = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+  lg2 = "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all"
+  s = "status -s"
+  graph = log --oneline --graph --all --decorate
+
+[user]
+	email = toto@babar.org
+	name = Toto Babar Tortue
+
+[merge]
+  tool = meld
+
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+
+[color]
+    ui = true
+
+[color "diff-highlight"]
+  oldNormal = red bold
+  oldHighlight = red bold 52
+  newNormal = green bold
+  newHighlight = green bold 22
+
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  commit = yellow bold
+  old = red bold
+  new = green bold
+  whitespace = red reverse
+```
