@@ -1,1 +1,2 @@
-fichier exemple
+fichier exemple 2
+diff status
