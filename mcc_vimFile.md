@@ -30,4 +30,5 @@ Cloner le repository :
 # Test
 
 Ce document est à compiler avec le template eisvogel pour pandoc.
+Il est possible de le faire via cette commande (à condition que vous ayez déjà installé pandoc et ses dependencies tout comme récupéré le template eisvogel) : `pandoc --from=markdown --latex-engine=xelatex --output mcc_vimFile.pdf mcc_vimFile.md --template eisvogel.tex -N`
 
