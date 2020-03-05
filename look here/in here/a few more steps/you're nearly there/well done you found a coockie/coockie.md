@@ -1,0 +1,1 @@
+[coockies](https://www.google.be/search?q=cookie&client=opera&hs=Shr&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiolZCJmYPoAhVUSsAKHbnlBWoQ_AUoAXoECBUQAw&biw=1440&bih=808#imgrc=vMjMMQhZ8C6JjM)
