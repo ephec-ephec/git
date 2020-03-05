@@ -1,0 +1,4 @@
+PVP fac :
+/faction join 2TI
+/f claim 16x16
+(on a des p4 ^^ )
